@@ -123,3 +123,15 @@ const font = [
 		color: 'blue'
 	}
 ];
+
+const container = document.querySelector('.main-container');
+
+font.forEach(element => {
+	const template = `
+	<div class="square">
+        <i class="${element.family} ${element.prefix}${element.name} fontsize-2 ${element.type}"></i>
+        <p>${element.name}</p>
+    </div>`
+
+	container.innerHTML += template
+})

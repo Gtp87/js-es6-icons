@@ -34,7 +34,7 @@
 }
 
 main {
-    height: calc(100vh - 120px);
+    height: 100vh;
     background-color: #DDDDDD;
 
 }
@@ -62,4 +62,16 @@ main {
 
 .fontsize-2 {
     font-size: 2em;
+}
+
+.animal {
+    color: orange;
+}
+
+.vegetable {
+    color: green;
+}
+
+.user {
+    color: blue;
 }
