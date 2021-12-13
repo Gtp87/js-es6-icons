@@ -135,3 +135,92 @@ font.forEach(element => {
 
 	container.innerHTML += template
 })
+
+// milestone3
+
+let select = document.getElementById('select');
+
+
+select.addEventListener('click', function(){
+	let valueSelect = parseInt(select.value);
+
+	switch (valueSelect) {
+		case 1:
+		default:
+			container.innerHTML = '';
+			font.forEach(element => {
+				const template = `
+                <div class="square ${element.type} ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
+                    <h3>${element.name}</h3>
+                </div>
+                `
+				container.innerHTML += template;
+			});
+			break;
+
+		case 2:
+			container.innerHTML = '';
+
+			let animal = font.filter((element) => {
+				if (element.type == 'animal') {
+					return true;
+				} else {
+					return false;
+				}
+			});
+			animal.forEach(element => {
+				const template = `
+                <div class="square ${element.type} ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
+                    <h3>${element.name}</h3>
+                </div>
+                `
+				container.innerHTML += template;
+			});
+			break;
+
+		case 3:
+			container.innerHTML = '';
+
+			let vegetable = font.filter((element) => {
+				if (element.type == 'vegetable') {
+					return true;
+				} else {
+					return false;
+				}
+			});
+			vegetable.forEach(element => {
+				const template = `
+                <div class="square ${element.type} ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
+                    <h3>${element.name}</h3>
+                </div>
+                `
+				container.innerHTML += template;
+			});
+			break;
+
+		case 4:
+			container.innerHTML = '';
+
+			let user = font.filter((element) => {
+				if (element.type == 'user') {
+					return true;
+				} else {
+					return false;
+				}
+			});
+			user.forEach(element => {
+				const template = `
+                <div class="square ${element.type} ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
+                    <h3>${element.name}</h3>
+                </div>
+                `
+				container.innerHTML += template;
+			});
+			break;
+	}
+
+});
