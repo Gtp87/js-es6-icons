@@ -150,9 +150,9 @@ select.addEventListener('click', function(){
 			container.innerHTML = '';
 			font.forEach(element => {
 				const template = `
-                <div class="square ${element.type} ">
-                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
-                    <h3>${element.name}</h3>
+                <div class="square  ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2 ${element.type}"></i>
+                    <p>${element.name}</p>
                 </div>
                 `
 				container.innerHTML += template;
@@ -171,9 +171,9 @@ select.addEventListener('click', function(){
 			});
 			animal.forEach(element => {
 				const template = `
-                <div class="square ${element.type} ">
-                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
-                    <h3>${element.name}</h3>
+                <div class="square ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2 ${element.type}"></i>
+                    <p>${element.name}<p>
                 </div>
                 `
 				container.innerHTML += template;
@@ -192,9 +192,9 @@ select.addEventListener('click', function(){
 			});
 			vegetable.forEach(element => {
 				const template = `
-                <div class="square ${element.type} ">
-                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
-                    <h3>${element.name}</h3>
+                <div class="square ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2 ${element.type}"></i>
+                    <p>${element.name}</p>
                 </div>
                 `
 				container.innerHTML += template;
@@ -213,9 +213,9 @@ select.addEventListener('click', function(){
 			});
 			user.forEach(element => {
 				const template = `
-                <div class="square ${element.type} ">
-                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2"></i>
-                    <h3>${element.name}</h3>
+                <div class="square  ">
+                    <i class="${element.family} ${element.prefix}${element.name} fontsize-2 ${element.type}"></i>
+                    <p>${element.name}</p>
                 </div>
                 `
 				container.innerHTML += template;
